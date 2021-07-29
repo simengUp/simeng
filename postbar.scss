@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 导航栏*/
+nav {
+    height: 32px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 32px;
+
+    ul {
+        @extend .clearfix;
+
+        li:nth-child(1) {
+            a {
+                padding-left: 20px;
+                background: url(./imgs/皇冠.png) no-repeat;
+            }
+        }
+
+        li:nth-child(6) {
+            background: #ebebeb;
+            width: 1px;
+            height: 13px;
+            margin-top: 10px;
+        }
+
+        li:nth-child(13) {
+            a {
+                text-decoration: none;
+                color: #666;
+            }
+        }
+
+        li:nth-child(n+6) {
+            a {
+                font-weight: 700;
+            }
+        }
+
+        li {
+            list-style: none;
+            float: right;
+            margin: 8px 13px 0px;
+
+            a {
+                display: block;
+                color: black;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/* 头部*/
+header {
+    @extend .clearfix;
+    @extend .center;
+    padding-bottom: 32px;
+
+    #log {
+        @extend .left;
+        margin-right: 15px;
+        margin-left: 80px;
+
+        img {
+            width: 135px;
+            height: 45px;
+        }
+    }
+
+    #sec {
+        @extend .left;
+        margin-top: 10px;
+
+        input:nth-child(1) {
+            height: 30px;
+            padding: 4px 10px 4px 7px;
+            width: 422px;
+            border: 1px solid #b8b8b8;
+            outline: none;
+            box-sizing: content-box;
+            @extend .left;
+
+        }
+
+        button {
+            height: 30px;
+            height: 40px;
+            line-height: 40px;
+            line-height: 40px;
+            width: 104px;
+            border: 1px solid #38F;
+            background: #3385ff;
+            @extend .left;
+            color: #fff;
+            font-size: 16px;
+
+        }
+
+        input:nth-child(3) {
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: #3385ff;
+            width: 102px;
+            @extend .left;
+            margin-left: 5px;
+            border: 1px solid #38F;
+            background-color: #ffff;
+        }
+
+        a {
+            line-height: 40px;
+            margin-left: 5px;
+            color: #000;
+            font-size: 13px;
+        }
+    }
+
+}
+
+/* 轮播图*/
+#loop {
+    @extend .center;
+
+    ul {
+        list-style: none;
+        @extend .clearfix;
+
+
+        li:nth-child(4) {
+            @extend .clearfix;
+            width: 314px;
+            height: 180px;
+            margin-right: 0px;
+            background: url(./imgs/百度贴吧2.png);
+            position: relative;
+
+            div {
+                position: absolute;
+                top: 72px;
+                left: 50px;
+
+                span {
+                    @extend .left;
+                    // display: block;
+                    width: 16px;
+                    height: 25px;
+                    border: 1px solid #fff;
+                    border-radius: 2px;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #1e99f0;
+                    background-color: #fff;
+                    margin-left: 8px;
+                }
+            }
+
+            button {
+                width: 209px;
+                height: 39px;
+                color: #1e99f0;
+                font-size: 20px;
+                font-weight: 500;
+                background-color: #E2F1FC;
+                border: none;
+                outline: none;
+                border-radius: 3px;
+                position: absolute;
+                left: 52px;
+                bottom: 21px;
+
+            }
+
+        }
+
+        li {
+            @extend .left;
+            margin-right: 3px;
+        }
+    }
+
+    div {
+        @extend .center;
+        @extend .clearfix;
+        margin-bottom: 12px;
+
+        div {
+            width: 150px;
+            margin: 0 auto;
+
+            span {
+                @extend .left;
+                margin-right: 11px;
+            }
+
+            ol {
+                @extend .left;
+                list-style: none;
+                @extend .clearfix;
+                margin-top: 5px;
+
+                li {
+                    @extend .left;
+                    margin-right: 11px;
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid #E2F1FC;
+                    border-radius: 7px;
+                    background-color: #F3F3F3;
+                }
+
+            }
+        }
+
+    }
+}
+
+.acss {
+    text-decoration: none;
+}
+
+.line {
+    line-height: 22px;
+}
+
+.a_css {
+    font-size: 12px;
+    display: inline-block;
+    padding: 4px 4px 2px 2px;
+    color: #999;
+    
+}
+
+.span_img {
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    margin: 0;
+    vertical-align: middle;
+    background: url(./imgs/百度贴吧1.png) no-repeat -335px -117px;
+}
+
+.a_tile {
+    font-size: 14px;
+    display: inline-block;
+    padding: 4px 4px 2px 2px;
+    color: #999;
+
+}
+
+/* 内容*/
+section {
+    @extend .center;
+    @extend .clearfix;
+    width: 1000px;
+
+
+    /* 左部*/
+    #left {
+        float: left;
+        width: 208px;
+        border-top: 1px solid #DCDCDC;
+        background-color: #E6E6E6;
+
+        #one {
+            height: 50px;
+            padding: 0 10px;
+
+            h4 {
+                color: #444;
+                font-size: 12px;
+                font-weight: 700;
+                @extend .line;
+            }
+
+            div:nth-child(2) {
+                a {
+                    @extend .acss;
+                    display: inline-block;
+                    padding: 4px 4px 2px 2px;
+                    color: #999;
+                    font-size: 12px;
+                    @extend .line;
+                }
+            }
+        }
+
+        #two {
+            margin: 14px 0 0;
+            padding: 4px 10px 0;
+
+            div:nth-child(1) {
+                font-weight: 700;
+                color: #444;
+                font-size: 12px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            div:nth-child(2) {
+                margin-left: 10px;
+                height: 1px;
+                font-size: 0;
+                width: 125px;
+                background: #fff;
+                border-top: 1px solid #d7d7d7;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        #three {
+            padding: 9px 10px 5px 9px;
+            border: 0;
+
+            #th_o {
+                padding: 9px 10px 5px 9px;
+                #th_t {
+                    span {
+                        @extend .span_img;
+                    }
+
+                    a {
+                        @extend .acss;
+                        @extend .a_tile;
+                    }
+                }
+            }
+
+            #th_s {
+                width: 190px;
+                height: 49px;
+                overflow: hidden;
+
+                a {
+                    @extend .a_css;
+                    @extend  .acss;
+
+                }
+            }
+        }
+
+        #fist {
+            padding: 9px 10px 5px 9px;
+            border-top: 1px solid #DCDCDC;
+
+            #fi_t {
+                span {
+                    @extend .span_img;
+                }
+
+                a {
+                    @extend  .acss;
+                    @extend .a_tile;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        #fi_s {
+            width: 190px;
+            height: 49px;
+            overflow: hidden;
+
+            a {
+                @extend .a_css;
+                @extend  .acss;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .right {
+        line-height: 38px;
+        font-size: 16px;
+        color: #444;
+        display: block;
+        padding-left: 10px;
+    }
+
+    .right_a {
+        display: block;
+        height: 95px;
+    }
+
+    /* 右部*/
+    #right {
+        float: left;
+        margin-left: 10px;
+        width: 780px;
+
+        /* 朵朵吧*/
+        #top {
+            border: 1px solid #D7D7D7;
+            width: 778px;
+            height: 274px;
+            @extend .clearfix;
+
+            #title {
+                line-height: 38px;
+                font-size: 16px;
+                color: #444;
+                display: block;
+                padding-left: 10px;
+            }
+
+            #top_o,
+            #top_two {
+                @extend .left;
+                padding: 0 10px;
+                margin-top: 1px;
+            }
+
+            #top_o>div,
+            #top_two>div {
+                @extend .clearfix;
+            }
+
+            #top_o>div>a,
+            #top_two>div>a {
+                float: left;
+                display: block;
+                height: 95px;
+            }
+
+            #top_o>div>a>img,
+            #top_two>div>a>img {
+                width: 95px;
+                height: 95px;
+                border-radius: 5px;
+            }
+
+            #top_o>div>div,
+            #top_two>div>div {
+                width: 264px;
+                float: left;
+                margin-left: 10px;
+            }
+
+            #top_o>div>div>p:nth-child(1),
+            #top_two>div>div>p:nth-child(1) {
+                padding-left: 44px;
+                background: url(./imgs/百度贴吧.png) no-repeat -140px 0px;
+
+                a {
+                    color: #005196;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+            }
+
+            #top_o>div>div>p:nth-child(2),
+            #top_two>div>div>p:nth-child(2) {
+                color: #666;
+                line-height: 20px;
+                margin-top: 10px;
+                height: 40px;
+                overflow: hidden;
+                font-size: 12px;
+            }
+
+            #top_o>div>div>p:nth-child(3),
+            #top_two>div>div>p:nth-child(3) {
+                margin-top: 6px;
+
+                span {
+                    font-size: 14px;
+                    font-family: Tahoma;
+                    color: #999;
+                    padding-left: 20px;
+                }
+
+                span:nth-child(1) {
+                    background: url(./imgs/百度贴吧.png) no-repeat 0 1px;
+                }
+
+                span:nth-child(2) {
+                    margin-left: 20px;
+                    background: url(./imgs/百度贴吧.png) no-repeat 0 -33px;
+                }
+            }
+
+        }
+
+        /* 欧冠16强*/
+        #bottom {
+            margin-top: 10px;
+
+            #bottom_title {
+                line-height: 38px;
+                font-size: 16px;
+                color: #444;
+                display: block;
+                padding-left: 10px;
+            }
+
+            #bot_foot {
+                margin-top: 1px;
+
+                #bot_top {
+                    @extend .left;
+                    width: 29px;
+                    height: 74px;
+                    display: block;
+                    background: url(./imgs/百度贴吧.png) no-repeat -7px -87px;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        @extend .left;
+                        width: 180px;
+                        background-color: #FCFCFC;
+                        display: block;
+                        width: 168px;
+                        height: 69px;
+                        float: left;
+                        margin: 0 5px;
+
+                        border: 1px solid #E7E7E7;
+                        border-bottom: 1px solid #D6D6D6;
+
+                        a {
+                            @extend .clearfix;
+
+                            img {
+                                display: block;
+                                float: left;
+                                width: 65px;
+                                height: 65px;
+                                margin: 2px;
+                                border-radius: 3px;
+                            }
+
+                            div {
+                                overflow: hidden;
+                                float: left;
+                                margin: 2px 0 0 10px;
+                            }
+
+                            .li_o>p:nth-child(1){
+                                font-size: 14px;
+                                color: #444;
+                                height: 18px;
+                                width: 88px;
+                                overflow: hidden;
+
+                            }
+                            .li_o>p:nth-child(2){
+                                line-height: 22px;
+                                padding-left: 20px;
+                                color: #999;
+                                background: url(./imgs/百度贴吧.png) no-repeat 0 4px;
+                                margin-top: 4px;
+                                font-size: 13px;
+                            }
+                            .li_o>p:nth-child(3){
+                                line-height: 22px;
+                                font-size: 12px;
+                                padding-left: 20px;
+                                color: #999;
+                                background:url(./imgs/百度贴吧.png);
+                                background-position: -163px -57px;
+                            }
+                           
+                        }
+
+
+                    }
+                }
+                #bot_bot {
+                    @extend .left;
+                    width: 29px;
+                    height: 74px;
+                    display: block;
+                    background: url(./imgs/百度贴吧.png) no-repeat -50px -87px;
+                }
+            }
+
+
+        }
+    }
+}

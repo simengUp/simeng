@@ -1,0 +1,517 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after, nav ul::after, header::after, #loop ul::after, #loop ul li:nth-child(4)::after, #loop div::after, #loop div div ol::after, section::after, section #right #top::after, section #right #top #top_o > div::after,
+section #right #top #top_two > div::after, section #right #bottom #bot_foot ul li a::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.left, header #log, header #sec, header #sec input:nth-child(1), header #sec button, header #sec input:nth-child(3), #loop ul li:nth-child(4) div span, #loop ul li, #loop div div span, #loop div div ol, #loop div div ol li, section #right #top #top_o,
+section #right #top #top_two, section #right #bottom #bot_foot #bot_top, section #right #bottom #bot_foot ul li, section #right #bottom #bot_foot #bot_bot {
+  float: left;
+}
+
+.center, header, #loop, #loop div, section {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* 导航栏*/
+nav {
+  height: 32px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 32px;
+}
+
+nav ul li:nth-child(1) a {
+  padding-left: 20px;
+  background: url(./imgs/皇冠.png) no-repeat;
+}
+
+nav ul li:nth-child(6) {
+  background: #ebebeb;
+  width: 1px;
+  height: 13px;
+  margin-top: 10px;
+}
+
+nav ul li:nth-child(13) a {
+  text-decoration: none;
+  color: #666;
+}
+
+nav ul li:nth-child(n+6) a {
+  font-weight: 700;
+}
+
+nav ul li {
+  list-style: none;
+  float: right;
+  margin: 8px 13px 0px;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  font-size: 13px;
+}
+
+/* 头部*/
+header {
+  padding-bottom: 32px;
+}
+
+header #log {
+  margin-right: 15px;
+  margin-left: 80px;
+}
+
+header #log img {
+  width: 135px;
+  height: 45px;
+}
+
+header #sec {
+  margin-top: 10px;
+}
+
+header #sec input:nth-child(1) {
+  height: 30px;
+  padding: 4px 10px 4px 7px;
+  width: 422px;
+  border: 1px solid #b8b8b8;
+  outline: none;
+  box-sizing: content-box;
+}
+
+header #sec button {
+  height: 30px;
+  height: 40px;
+  line-height: 40px;
+  line-height: 40px;
+  width: 104px;
+  border: 1px solid #38F;
+  background: #3385ff;
+  color: #fff;
+  font-size: 16px;
+}
+
+header #sec input:nth-child(3) {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #3385ff;
+  width: 102px;
+  margin-left: 5px;
+  border: 1px solid #38F;
+  background-color: #ffff;
+}
+
+header #sec a {
+  line-height: 40px;
+  margin-left: 5px;
+  color: #000;
+  font-size: 13px;
+}
+
+/* 轮播图*/
+#loop ul {
+  list-style: none;
+}
+
+#loop ul li:nth-child(4) {
+  width: 314px;
+  height: 180px;
+  margin-right: 0px;
+  background: url(./imgs/百度贴吧2.png);
+  position: relative;
+}
+
+#loop ul li:nth-child(4) div {
+  position: absolute;
+  top: 72px;
+  left: 50px;
+}
+
+#loop ul li:nth-child(4) div span {
+  width: 16px;
+  height: 25px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 25px;
+  color: #1e99f0;
+  background-color: #fff;
+  margin-left: 8px;
+}
+
+#loop ul li:nth-child(4) button {
+  width: 209px;
+  height: 39px;
+  color: #1e99f0;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #E2F1FC;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  position: absolute;
+  left: 52px;
+  bottom: 21px;
+}
+
+#loop ul li {
+  margin-right: 3px;
+}
+
+#loop div {
+  margin-bottom: 12px;
+}
+
+#loop div div {
+  width: 150px;
+  margin: 0 auto;
+}
+
+#loop div div span {
+  margin-right: 11px;
+}
+
+#loop div div ol {
+  list-style: none;
+  margin-top: 5px;
+}
+
+#loop div div ol li {
+  margin-right: 11px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #E2F1FC;
+  border-radius: 7px;
+  background-color: #F3F3F3;
+}
+
+.acss, section #left #one div:nth-child(2) a, section #left #three #th_o #th_t a, section #left #three #th_s a, section #left #fist #fi_t a, section #left #fi_s a {
+  text-decoration: none;
+}
+
+.line, section #left #one h4, section #left #one div:nth-child(2) a {
+  line-height: 22px;
+}
+
+.a_css, section #left #three #th_s a, section #left #fi_s a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 4px 4px 2px 2px;
+  color: #999;
+}
+
+.span_img, section #left #three #th_o #th_t span, section #left #fist #fi_t span {
+  display: inline-block;
+  width: 25px;
+  height: 18px;
+  margin: 0;
+  vertical-align: middle;
+  background: url(./imgs/百度贴吧1.png) no-repeat -335px -117px;
+}
+
+.a_tile, section #left #three #th_o #th_t a, section #left #fist #fi_t a {
+  font-size: 14px;
+  display: inline-block;
+  padding: 4px 4px 2px 2px;
+  color: #999;
+}
+
+/* 内容*/
+section {
+  width: 1000px;
+  /* 左部*/
+  /* 右部*/
+}
+
+section #left {
+  float: left;
+  width: 208px;
+  border-top: 1px solid #DCDCDC;
+  background-color: #E6E6E6;
+}
+
+section #left #one {
+  height: 50px;
+  padding: 0 10px;
+}
+
+section #left #one h4 {
+  color: #444;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+section #left #one div:nth-child(2) a {
+  display: inline-block;
+  padding: 4px 4px 2px 2px;
+  color: #999;
+  font-size: 12px;
+}
+
+section #left #two {
+  margin: 14px 0 0;
+  padding: 4px 10px 0;
+}
+
+section #left #two div:nth-child(1) {
+  font-weight: 700;
+  color: #444;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section #left #two div:nth-child(2) {
+  margin-left: 10px;
+  height: 1px;
+  font-size: 0;
+  width: 125px;
+  background: #fff;
+  border-top: 1px solid #d7d7d7;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section #left #three {
+  padding: 9px 10px 5px 9px;
+  border: 0;
+}
+
+section #left #three #th_o {
+  padding: 9px 10px 5px 9px;
+}
+
+section #left #three #th_s {
+  width: 190px;
+  height: 49px;
+  overflow: hidden;
+}
+
+section #left #fist {
+  padding: 9px 10px 5px 9px;
+  border-top: 1px solid #DCDCDC;
+}
+
+section #left #fist #fi_t a {
+  line-height: 22px;
+}
+
+section #left #fi_s {
+  width: 190px;
+  height: 49px;
+  overflow: hidden;
+}
+
+section #left #fi_s a {
+  line-height: 22px;
+}
+
+section .right {
+  line-height: 38px;
+  font-size: 16px;
+  color: #444;
+  display: block;
+  padding-left: 10px;
+}
+
+section .right_a {
+  display: block;
+  height: 95px;
+}
+
+section #right {
+  float: left;
+  margin-left: 10px;
+  width: 780px;
+  /* 朵朵吧*/
+  /* 欧冠16强*/
+}
+
+section #right #top {
+  border: 1px solid #D7D7D7;
+  width: 778px;
+  height: 274px;
+}
+
+section #right #top #title {
+  line-height: 38px;
+  font-size: 16px;
+  color: #444;
+  display: block;
+  padding-left: 10px;
+}
+
+section #right #top #top_o,
+section #right #top #top_two {
+  padding: 0 10px;
+  margin-top: 1px;
+}
+
+section #right #top #top_o > div > a,
+section #right #top #top_two > div > a {
+  float: left;
+  display: block;
+  height: 95px;
+}
+
+section #right #top #top_o > div > a > img,
+section #right #top #top_two > div > a > img {
+  width: 95px;
+  height: 95px;
+  border-radius: 5px;
+}
+
+section #right #top #top_o > div > div,
+section #right #top #top_two > div > div {
+  width: 264px;
+  float: left;
+  margin-left: 10px;
+}
+
+section #right #top #top_o > div > div > p:nth-child(1),
+section #right #top #top_two > div > div > p:nth-child(1) {
+  padding-left: 44px;
+  background: url(./imgs/百度贴吧.png) no-repeat -140px 0px;
+}
+
+section #right #top #top_o > div > div > p:nth-child(1) a,
+section #right #top #top_two > div > div > p:nth-child(1) a {
+  color: #005196;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+section #right #top #top_o > div > div > p:nth-child(2),
+section #right #top #top_two > div > div > p:nth-child(2) {
+  color: #666;
+  line-height: 20px;
+  margin-top: 10px;
+  height: 40px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+section #right #top #top_o > div > div > p:nth-child(3),
+section #right #top #top_two > div > div > p:nth-child(3) {
+  margin-top: 6px;
+}
+
+section #right #top #top_o > div > div > p:nth-child(3) span,
+section #right #top #top_two > div > div > p:nth-child(3) span {
+  font-size: 14px;
+  font-family: Tahoma;
+  color: #999;
+  padding-left: 20px;
+}
+
+section #right #top #top_o > div > div > p:nth-child(3) span:nth-child(1),
+section #right #top #top_two > div > div > p:nth-child(3) span:nth-child(1) {
+  background: url(./imgs/百度贴吧.png) no-repeat 0 1px;
+}
+
+section #right #top #top_o > div > div > p:nth-child(3) span:nth-child(2),
+section #right #top #top_two > div > div > p:nth-child(3) span:nth-child(2) {
+  margin-left: 20px;
+  background: url(./imgs/百度贴吧.png) no-repeat 0 -33px;
+}
+
+section #right #bottom {
+  margin-top: 10px;
+}
+
+section #right #bottom #bottom_title {
+  line-height: 38px;
+  font-size: 16px;
+  color: #444;
+  display: block;
+  padding-left: 10px;
+}
+
+section #right #bottom #bot_foot {
+  margin-top: 1px;
+}
+
+section #right #bottom #bot_foot #bot_top {
+  width: 29px;
+  height: 74px;
+  display: block;
+  background: url(./imgs/百度贴吧.png) no-repeat -7px -87px;
+}
+
+section #right #bottom #bot_foot ul {
+  list-style: none;
+}
+
+section #right #bottom #bot_foot ul li {
+  width: 180px;
+  background-color: #FCFCFC;
+  display: block;
+  width: 168px;
+  height: 69px;
+  float: left;
+  margin: 0 5px;
+  border: 1px solid #E7E7E7;
+  border-bottom: 1px solid #D6D6D6;
+}
+
+section #right #bottom #bot_foot ul li a img {
+  display: block;
+  float: left;
+  width: 65px;
+  height: 65px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+section #right #bottom #bot_foot ul li a div {
+  overflow: hidden;
+  float: left;
+  margin: 2px 0 0 10px;
+}
+
+section #right #bottom #bot_foot ul li a .li_o > p:nth-child(1) {
+  font-size: 14px;
+  color: #444;
+  height: 18px;
+  width: 88px;
+  overflow: hidden;
+}
+
+section #right #bottom #bot_foot ul li a .li_o > p:nth-child(2) {
+  line-height: 22px;
+  padding-left: 20px;
+  color: #999;
+  background: url(./imgs/百度贴吧.png) no-repeat 0 4px;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+section #right #bottom #bot_foot ul li a .li_o > p:nth-child(3) {
+  line-height: 22px;
+  font-size: 12px;
+  padding-left: 20px;
+  color: #999;
+  background: url(./imgs/百度贴吧.png);
+  background-position: -163px -57px;
+}
+
+section #right #bottom #bot_foot #bot_bot {
+  width: 29px;
+  height: 74px;
+  display: block;
+  background: url(./imgs/百度贴吧.png) no-repeat -50px -87px;
+}
